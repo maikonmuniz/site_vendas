@@ -1,0 +1,72 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supply Now</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'files/cadastro_loja/stylee.css' %}">
+</head>
+<body>
+    <img class="logo" src="{% static 'images/cadastro_loja/logo.jpeg' %}" alt="">
+    <form class="form" action="{% url 'cadastro_loja' %}" method="POST">
+        <div class="card">
+            <div class="card-top">
+                <h2 class="title">Cadastre seu comércio</h2>
+            </div>
+            
+            <div class="card-group">
+                <input type="text" name="nome_responsavel" placeholder="Nome do Responsável">
+            </div>
+
+            <div class="card-group">
+                <input type="text" name="nome_loja" placeholder="Nome da Loja">
+            </div>
+
+
+            <br>
+
+
+            <div class="card-group">
+                <input type="text" name="endereço" placeholder="Endereço">
+            </div>
+            
+            <div class="card-group">
+                <input type="text" name="cidade" placeholder="Cidade">
+            </div>
+
+            <br>
+
+
+            <div class="card-group">
+                <input type="text" name="cep" placeholder="CEP">
+            </div>
+
+            <div class="card-group">
+                <input type="text" name="cnpj" placeholder="Cnpj">
+            </div>
+
+
+            <br>
+
+
+            <div class="card-group">
+                <input type="text" name="email" placeholder="E-mail">
+            </div>
+
+            <div class="card-group">
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+
+            <input type="submit" value="Cadastrar">
+        </div>
+        </form>
+
+        <div class="mover">
+
+            <h2>Venda mais com sua loja de suplementos</h2>
+            <p>Clientes a um clique de distância e seu negócio vendendo como nunca</p>
+        
+        </div>
+  </body>
+</html>

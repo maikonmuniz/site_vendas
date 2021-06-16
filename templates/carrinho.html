@@ -1,0 +1,344 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>carrinho</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="{% static 'resources/css/axure_rp_page.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'data/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'files/carrinho/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <script src="{% static 'resources/scripts/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/axQuery.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/globals.js' %}"></script>
+    <script src="{% static 'resources/scripts/axutils.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/annotation.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/axQuery.std.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/doc.js' %}"></script>
+    <script src="{% static 'resources/scripts/messagecenter.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/events.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/recording.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/action.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/expr.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/geometry.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/flyout.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/model.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/repeater.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/sto.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/utils.temp.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/variables.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/drag.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/move.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/visibility.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/style.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/adaptive.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/tree.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/init.temp.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/legacy.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/viewer.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/math.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'data/document.js' %}"></script>
+    <script src="{% static 'files/carrinho/data.js' %}"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u40" class="ax_default">
+        <div id="u40_state0" class="panel_state" data-label="State1" style="">
+          <div id="u40_state0_content" class="panel_state_content">
+          </div>
+        </div>
+      </div>
+
+      <!-- logo (Image) -->
+      <a href="{% url 'dashboard' %}">
+        <div id="u41" class="ax_default image" data-label="logo">
+          <img id="u41_img" class="img " src="{% static 'images/cadastro_loja/logo_u6.png' %}"/>
+          <div id="u41_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </a>
+
+      <!-- busca (Text Field) -->
+      <div id="u42" class="ax_default text_field" data-label="busca">
+        <div id="u42_div" class=""></div>
+        <input id="u42_input" type="text" value="" class="u42_input"/>
+      </div>
+
+      <!-- Unnamed (Shape) -->
+      <div id="u43" class="ax_default icon">
+        <img id="u43_img" class="img " src="{% static 'images/home_user/u18.svg' %}"/>
+        <div id="u43_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- botao-usuario (Dynamic Panel) -->
+      <div id="u44" class="ax_default" data-label="botao-usuario">
+        <div id="u44_state0" class="panel_state" data-label="hide" style="">
+          <div id="u44_state0_content" class="panel_state_content">
+
+            <!-- Unnamed (Shape) -->
+            <div id="u45" class="ax_default icon">
+              <img id="u45_img" class="img " src="{% static 'images/home_user/u20.svg' %}"/>
+              <div id="u45_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="u44_state1" class="panel_state" data-label="show" style="visibility: hidden;">
+          <div id="u44_state1_content" class="panel_state_content">
+
+            <!-- Unnamed (Shape) -->
+            <div id="u46" class="ax_default icon">
+              <img id="u46_img" class="img " src="{% static 'images/home_user/u20.svg' %}"/>
+              <div id="u46_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u47" class="ax_default box_1">
+              <div id="u47_div" class=""></div>
+              <div id="u47_text" class="text " style="display:none; visibility: hidden">
+                <p></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Rectangle) -->
+            <div id="u48" class="ax_default heading_3">
+              <div id="u48_div" class=""></div>
+              <div id="u48_text" class="text ">
+                <p><span>Olá, usuário!</span></p>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u49" class="ax_default" data-left="-140" data-top="98" data-width="123" data-height="28">
+
+              <!-- Unnamed (Shape) -->
+              <div id="u50" class="ax_default icon">
+                <img id="u50_img" class="img " src="{% static 'images/home_user/u25.svg' %}"/>
+                <div id="u50_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Rectangle) -->
+              <div id="u51" class="ax_default label">
+                <div id="u51_div" class=""></div>
+                <div id="u51_text" class="text ">
+                  <p><span>Editar dados</span></p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Unnamed (Group) -->
+            <div id="u52" class="ax_default" data-left="-140" data-top="140" data-width="69" data-height="23">
+
+              <!-- Unnamed (Shape) -->
+              <div id="u53" class="ax_default icon">
+                <img id="u53_img" class="img " src="{% static 'images/home_user/u28.svg' %}"/>
+                <div id="u53_text" class="text " style="display:none; visibility: hidden">
+                  <p></p>
+                </div>
+              </div>
+
+              <!-- Unnamed (Rectangle) -->
+              <a href="{% url 'logout' %}}>
+                <div id="u54" class="ax_default label">
+                  <div id="u54_div" class=""></div>
+                  <div id="u54_text" class="text ">
+                    <p><span>Sair</span></p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- botao-carrinho (Shape) -->
+      <div id="u55" class="ax_default icon" data-label="botao-carrinho">
+        <img id="u55_img" class="img " src="{% static 'images/home_user/botao-carrinho_u30.svg' %}"/>
+        <div id="u55_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u56" class="ax_default heading_2">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
+          <p><span>Seu carrinho</span></p>
+        </div>
+      </div>
+
+      <!-- carrinho-table (Table) -->
+      <div id="u57" class="ax_default" data-label="carrinho-table">
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u58" class="ax_default table_cell">
+          <div id="u58_text" class="text ">
+            <p><span>Imagem</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u59" class="ax_default table_cell">
+          <div id="u59_text" class="text ">
+            <p><span>Produto</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u60" class="ax_default table_cell">
+          <div id="u60_text" class="text ">
+            <p><span>Quantidade</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u61" class="ax_default table_cell">
+          <div id="u61_text" class="text ">
+            <p><span>Preço unitário</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u62" class="ax_default table_cell">
+          <div id="u62_text" class="text ">
+            <p><span>Preço total</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u63" class="ax_default table_cell">
+          <div id="u63_text" class="text ">
+            <p><span>Remover</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u64" class="ax_default table_cell">
+          <div id="u64_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u65" class="ax_default table_cell">
+          <div id="u65_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u66" class="ax_default table_cell">
+          <div id="u66_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u67" class="ax_default table_cell">
+          <div id="u67_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u68" class="ax_default table_cell">
+          <div id="u68_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u69" class="ax_default table_cell">
+          <div id="u69_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u70" class="ax_default table_cell">
+          <div id="u70_text" class="text ">
+            <p><span>Total</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u71" class="ax_default table_cell">
+          <div id="u71_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u72" class="ax_default table_cell">
+          <div id="u72_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u73" class="ax_default table_cell">
+          <div id="u73_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- preco-total (Table Cell) -->
+        <div id="u74" class="ax_default table_cell" data-label="preco-total">
+          <div id="u74_text" class="text ">
+            <p><span>R$ 12.00</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table Cell) -->
+        <div id="u75" class="ax_default table_cell">
+          <div id="u75_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- botao-compra (Rectangle) -->
+      <a href="{% url 'process' %}">
+      <div id="u76" class="ax_default primary_button" data-label="botao-compra">
+        <div id="u76_div" class=""></div>
+        <div id="u76_text" class="text ">
+          <p><span>Finalizar compra</span></p>
+        </div>
+      </div>
+      </a>
+
+      <!-- botao-continuar-compra (Rectangle) -->
+      <div id="u77" class="ax_default primary_button" data-label="botao-continuar-compra">
+        <div id="u77_div" class=""></div>
+        <div id="u77_text" class="text ">
+          <p><span>Continuar comprando</span></p>
+        </div>
+      </div>
+
+      <!-- botao remover (Rectangle) -->
+      <div id="u78" class="ax_default primary_button" data-label="botao remover">
+        <div id="u78_div" class=""></div>
+        <div id="u78_text" class="text ">
+          <p><span>Remover</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="{% static 'resources/scripts/axure/ios.js' %}"></script>
+  </body>
+</html>

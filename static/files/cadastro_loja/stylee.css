@@ -1,0 +1,82 @@
+body{
+    background-color: whitesmoke;
+}
+
+.form{
+    padding-top: 10px;
+}
+
+.card{
+    height: 40px;
+    width: 750px;
+    box-shadow: 5px 5px 5px;
+    background-color: white;
+    padding: 00px 00px 350px 50px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 5px;
+}
+.card-top{
+    height: 30px;
+    right: -10px;
+}
+
+.card-group{
+
+    display: inline-block;
+    margin-top: 1rem;
+    font-size:  2rem;
+    width: 45%;
+    height: 40px;
+    border: 8px;
+    right: 110px;
+    line-height: 40px;   
+}
+
+
+.card-group > input{
+    border-radius: 5px;
+    width: 320px;
+    height: 30px;
+
+}
+
+
+form input[type="submit"] {
+    cursor:pointer;
+    width: 50%;
+    height: 70%;
+    margin-top: 2rem;
+    border: none;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    display: right ;
+    position: relative;
+    left: 250px;
+}
+
+form input[type="submit"]:hover{
+    background: #870805;
+    font-size: 1.1rem;
+    color:white;
+
+}
+
+.logo{
+    width: 240px;
+    height: 140px;
+    padding-left: 2cm;
+}
+
+.mover{
+   margin-left: 23cm;
+   font-size: 25px;
+   position: relative;
+   left: 50;
+   top: -400px;
+   width: 400px;
+   height: 110%;
+}

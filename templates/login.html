@@ -1,0 +1,41 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'files/login/reset.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'files/login/styles.css' %}" type="text/css"/>
+</head>
+<body>
+  <main>
+    <img class="img_logo" src="{% static 'images/home/logo_u12.png' %}" width="180px" height="102px">
+    {% if messages %}
+      {% for message in messages %}
+        <div class="alert alert-danger" role="alert" width="500px">
+          {{ message }}
+        </div>
+      {% endfor %}
+    {% endif %}
+    <form action="{% url 'login' %}" method="POST">
+      <h2>Login</h2>
+      {% csrf_token %}
+      <input type="email" name="email" placeholder="Email" required></br>
+      <input type="password" name="senha" placeholder="Senha" required>
+      <p><a class="senha">Esqueci minha senha</a></p>
+      <div class="capctha-align">
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+        <div class="g-recaptcha" data-sitekey="6Lfa8KQaAAAAAPRTGi0proqC4d4MdwDJekoE86MG"></div>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+    <div class="rodape">
+      <p>Não tem uma conta?</p>
+      <a href="{% url 'cadastro' %}">Crie uma conta aqui</a>
+    </div>
+  </main>
+</body>
+</html>

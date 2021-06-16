@@ -1,0 +1,192 @@
+﻿{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>cadastro_usuario</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="{% static 'resources/css/axure_rp_page.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'data/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <link href="{% static 'files/cadastro_usuario/styles.css' %}" type="text/css" rel="stylesheet"/>
+    <script src="{% static 'resources/scripts/jquery-3.2.1.min.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/axQuery.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/globals.js' %}"></script>
+    <script src="{% static 'resources/scripts/axutils.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/annotation.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/axQuery.std.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/doc.js' %}"></script>
+    <script src="{% static 'resources/scripts/messagecenter.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/events.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/recording.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/action.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/expr.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/geometry.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/flyout.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/model.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/repeater.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/sto.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/utils.temp.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/variables.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/drag.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/move.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/visibility.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/style.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/adaptive.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/tree.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/init.temp.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/legacy.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/viewer.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/math.js' %}"></script>
+    <script src="{% static 'resources/scripts/axure/jquery.nicescroll.min.js' %}"></script>
+    <script src="{% static 'data/document.js' %}"></script>
+    <script src="{% static 'files/cadastro_usuario/data.js' %}"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Dynamic Panel) -->
+      <div id="u47" class="ax_default">
+        <div id="u47_state0" class="panel_state" data-label="State1" style="">
+          <div id="u47_state0_content" class="panel_state_content">
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u48" class="ax_default box_1">
+        <div id="u48_div" class=""></div>
+        <div id="u48_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u49" class="ax_default heading_2">
+        <div id="u49_div" class=""></div>
+        <div id="u49_text" class="text ">
+          <p><span>Cadastro</span></p>
+        </div>
+      </div>
+
+      <form action="{% url 'cadastro' %}" method="POST">
+      {% csrf_token %}
+
+      <!-- botao (Rectangle) -->
+      <button type="submit">
+      <div id="u50" class="ax_default primary_button" data-label="botao">
+        <div id="u50_div" class=""></div>
+        <div id="u50_text" class="text ">
+          <p><span>Criar conta</span></p>
+        </div>
+      </div>
+      </button>
+
+      <!-- logo (Image) -->
+      <div id="u51" class="ax_default image" data-label="logo">
+        <img id="u51_img" class="img " src="{% static 'images/home/logo_u12.png' %}"/>
+        <div id="u51_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u52" class="ax_default label">
+        <div id="u52_div" class=""></div>
+        <div id="u52_text" class="text ">
+          <p><span>Digite seus dados pessoais:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u53" class="ax_default" data-left="366" data-top="377" data-width="292" data-height="26">
+
+        <!-- email (Text Field) -->
+        <div id="u54" class="ax_default text_field" data-label="email">
+          <div id="u54_div" class=""></div>
+          <input id="u54_input" type="email" name="email" class="u54_input"/>
+        </div>
+
+        <!-- Unnamed (Shape) 
+        <div id="u55" class="ax_default icon">
+          <img id="u55_img" class="img " src="{% static 'images/cadastro_usuario/u55.svg' %}"/>
+          <div id="u55_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      -->
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u56" class="ax_default label">
+        <div id="u56_div" class=""></div>
+        <div id="u56_text" class="text ">
+          <p><span>Digite os dados da sua conta:</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u57" class="ax_default" data-left="366" data-top="300" data-width="292" data-height="26">
+
+        <!-- telefone (Text Field) -->
+        <div id="u58" class="ax_default text_field" data-label="telefone">
+          <div id="u58_div" class=""></div>
+          <input id="u58_input" type="tel" name="telefone" class="u58_input"/>
+        </div>
+
+        <!-- Unnamed (Shape) 
+        <div id="u59" class="ax_default icon">
+          <img id="u59_img" class="img " src="{% static 'images/cadastro_usuario/u59.svg' %}"/>
+          <div id="u59_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      -->
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u60" class="ax_default" data-left="366" data-top="257" data-width="292" data-height="26">
+
+        <!-- nome (Text Field) -->
+        <div id="u61" class="ax_default text_field" data-label="nome">
+          <div id="u61_div" class=""></div>
+          <input id="u61_input" type="text" name="nome" class="u61_input"/>
+        </div>
+
+        <!-- Unnamed (Shape) 
+        <div id="u62" class="ax_default icon">
+          <img id="u62_img" class="img " src="{% static 'images/cadastro_usuario/u62.svg' %}"/>
+          <div id="u62_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      -->
+      </div>
+
+      <!-- Unnamed (Group) -->
+      <div id="u63" class="ax_default" data-left="366" data-top="421" data-width="292" data-height="26">
+
+        <!-- senha (Text Field) -->
+        <div id="u64" class="ax_default text_field" data-label="senha">
+          <div id="u64_div" class=""></div>
+          <input id="u64_input" type="password" name="senha" class="u64_input"/>
+        </div>
+
+        <!-- Unnamed (Shape) 
+        <div id="u65" class="ax_default icon">
+          <img id="u65_img" class="img " src="{% static 'images/cadastro_usuario/u65.svg' %}"/>
+          <div id="u65_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      -->
+      </div>
+      </form>
+    </div>
+    <script src="{% static 'resources/scripts/axure/ios.js' %}"></script>
+  </body>
+</html>
